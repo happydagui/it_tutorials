@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap Application</title>
+		<link rel="stylesheet" href="vendor/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+		<script src="vendor/jquery-2.2.3.min.js"></script>
+		<script src="vendor/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div><!-- 不用row的话，每列宽度只有570px = (1170-15x2)/2 -->
+				<div class="col-md-6" style="background: red">hello</div>
+				<div class="col-md-6" style="background: yellow">world</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row"><!-- 用row的话，每列宽度有585px -->
+				<div class="col-md-6" style="background: red">hello</div>
+				<div class="col-md-6" style="background: yellow">world</div>
+			</div>
+		</div>
+		<hr />
+		<!-- row 有 -15px的左右margin, container 有15px的 padding，row放在container中时row是左对齐顶格的-->
+		<div class="row">
+			<div class="col-md-6" style="background: red">hello</div>
+			<div class="col-md-6" style="background: yellow">world</div>
+		</div>
+		<div class="">
+			<div class="col-md-6" style="background: red">hello</div>
+			<div class="col-md-6" style="background: yellow">world</div>
+		</div>
+	</body>
+</html>

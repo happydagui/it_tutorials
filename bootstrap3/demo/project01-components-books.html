@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap Application</title>
+		<link rel="stylesheet" href="vendor/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+		<script src="vendor/jquery-2.2.3.min.js"></script>
+		<script src="vendor/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<style type="text/css">
+		.nav-tabs {
+		border-bottom: none !important /*1px solid #ddd*/;
+		}
+		.nav > li > a {
+		position: relative;
+		display: block;
+		padding: 0px !important /*10px 15px*/;
+		}
+		.nav-tabs > li > a {
+		margin-right: 2px;
+		line-height: 1.42857143;
+		/*border: 1px solid transparent;*/
+		/*border-radius: 4px 4px 0 0;*/
+		}
+		.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+		color: white;
+		cursor: default;
+		background-color: #E97A00;
+		/*border: 1px solid #ddd;*/
+		border-bottom-color: transparent;
+		}
+		.nav-tabs > li {
+			/*border-right: 1px solid gray;*/
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="panel panel-default col-md-8" role="tabpanel"><!-- tabpanel here -->
+					<div class="panel-heading">
+						<h3 class="panel-title">图书
+						<!-- Nav tabs here -->
+						<ul class="nav nav-tabs pull-right list-inline" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#home" aria-controls="home" role="tab" data-toggle="tab">入门</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">实战</a>
+							</li>
+						</ul>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<!-- Tab panes here -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								<div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+										<div class="thumbnail text-center">
+											<img src="images/koala.jpg" alt="">
+											<div class="caption">
+												<div><a href="#">Koala</a></div>
+												<p> 评论(0)<span class="badge">2推荐</span> </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+										<div class="thumbnail text-center">
+											<img src="images/koala.jpg" alt="">
+											<div class="caption">
+												<div><a href="#">Koala</a></div>
+												<p> 评论(0)<span class="badge">2推荐</span> </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+										<div class="thumbnail text-center">
+											<img src="images/koala.jpg" alt="">
+											<div class="caption">
+												<div><a href="#">Koala</a></div>
+												<p> 评论(0)<span class="badge">2推荐</span> </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+										<div class="thumbnail text-center">
+											<img src="images/koala.jpg" alt="">
+											<div class="caption">
+												<div><a href="#">Koala</a></div>
+												<p> 评论(0)<span class="badge">2推荐</span> </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+										<div class="thumbnail text-center">
+											<img src="images/koala.jpg" alt="">
+											<div class="caption">
+												<div><a href="#">Koala</a></div>
+												<p> 评论(0)<span class="badge">2推荐</span> </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+										<div class="thumbnail text-center">
+											<img src="images/koala.jpg" alt="">
+											<div class="caption">
+												<div><a href="#">Koala</a></div>
+												<p> 评论(0)<span class="badge">2推荐</span> </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab">this is the tab page.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
