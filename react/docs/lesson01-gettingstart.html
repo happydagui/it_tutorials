@@ -1015,11 +1015,43 @@ body .markdown-body
   }
 }
 </style><title>lesson01-gettingstart</title></head><body><article class="markdown-body"><h1 id="notes-for-react"><a name="user-content-notes-for-react" href="#notes-for-react" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Notes for React</h1>
-<p>准备工作<br />
-firefox + React Developer Tools(addon)<br />
-sublime text 3</p>
+<p><strong>简介</strong><br />
+React是Facebook开源的一个用于构建用户界面的Javascript库，已经 应用于Facebook及旗下Instagram。<br />
+和庞大的AngularJS不同，React专注于MVC架构中的V，即视图。 这使得React很容易和开发者已有的开发栈进行融合。<br />
+React顺应了Web开发组件化的趋势。应用React时，你总是应该从UI出发抽象出不同 的组件，然后像搭积木一样把它们拼装起来：<br />
+不过，React定义组件的方式和AngularJS截然不同。如果说HTML是一个轮子，AngularJS 的指令/Directive则是给这个轮子镶了个金边，而React，重新造了个轮子： JSX。<br />
+React抛弃HTML另起炉灶的原因之一是性能的考虑：DOM操作非常之慢。React引入了 虚拟DOM的概念：开发者操作虚拟DOM，React在必要的时候将它们渲染到真正的 DOM上 —— 有点像游戏开发中的双缓冲区/Double Buffer帧重绘。</p>
+<p>引入虚拟DOM的另一个好处是，容易引入不同的渲染引擎。比如将你的应用代码渲染 到真实的DOM，或者nodejs服务端的无头DOM，或者，iOS/Android平台组件 —— 这就是 React Native.<br />
+<strong>准备工作</strong><br />
+- firefox + React Developer Tools(addon)<br />
+- sublime text 3 +  (babel-sublime)[<a href="https://github.com/babel/babel-sublime">https://github.com/babel/babel-sublime</a>] + (babel-sublime-snippets)[<a href="https://github.com/babel/babel-sublime-snippets">https://github.com/babel/babel-sublime-snippets</a>]<br />
+- create-react-app:来自Facebook官方的零配置命令行工具</p>
+<blockquote>
+<p>通过nodejs安装 <code>npm install -g create-react-app</code></p>
+</blockquote>
 <h2 id="create-a-react-app-with-cli"><a name="user-content-create-a-react-app-with-cli" href="#create-a-react-app-with-cli" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>create a react app with cli</h2>
-<pre><code>npm install -g create-react-app
-create-react-app my-app
+<p>创建 react 应用<br />
+<pre><code>create-react-app my-app
 cd my-app &amp;&amp; npm start
-</code></pre></article></body></html>
+</code></pre><br />
+启动浏览器，进入 [<a href="http://localhost:3000/">http://localhost:3000/</a>] 浏览。</p>
+<h2 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>第一个组件</h2>
+<h2 id="jsx"><a name="user-content-jsx" href="#jsx" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>什么是 JSX</h2>
+<p>表面上看来，JSX 与 HTML 很相似，但功能比HTML多，例如。。。，从本质上将，JSX 是一种模板语言，如果你接触过J2EE开发的话，JSX与JSTL、Velocity、Freemarker是一类东西。</p>
+<h2 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>练习</h2>
+<h3 id="babel"><a name="user-content-babel" href="#babel" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>关于 Babel 插件的安装</h3>
+<p>Find it as <a href="https://packagecontrol.io/packages/Babel"><strong>Babel</strong></a> through <a href="https://packagecontrol.io/">Package Control</a>.</p>
+<h4 id="setting-as-the-default-syntax"><a name="user-content-setting-as-the-default-syntax" href="#setting-as-the-default-syntax" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Setting as the default syntax</h4>
+<p>To set it as the default syntax for a particular extension:<br />
+  1. Open a file with that extension,<br />
+  2. Select <code>View</code> from the menu,<br />
+  3. Then <code>Syntax</code> <code>-&gt;</code> <code>Open all with current extension as...</code> <code>-&gt;</code> <code>Babel</code> <code>-&gt;</code> <code>JavaScript (Babel)</code>.<br />
+  4. Repeat this for each extension (e.g.: <code>.js</code> and <code>.jsx</code>).</p>
+<h4 id="setting-a-color-scheme"><a name="user-content-setting-a-color-scheme" href="#setting-a-color-scheme" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Setting a Color Scheme</h4>
+<p><code>Babel</code> comes bundled with <code>Next</code> and <code>Monokai</code> from <a href="https://github.com/Benvie/JavaScriptNext.tmLanguage">Benvie/JavaScriptNext.tmLanguage</a>. Select one from <code>Preferences</code> <code>-&gt;</code> <code>Color Scheme</code> <code>-&gt;</code> <code>Babel</code></p>
+<h4 id="snippets"><a name="user-content-snippets" href="#snippets" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Snippets</h4>
+<p>Find them separately at <a href="https://github.com/babel/babel-sublime-snippets">babel/babel-sublime-snippets</a> or as <a href="https://packagecontrol.io/packages/Babel Snippets"><strong>Babel Snippets</strong></a> through <a href="https://packagecontrol.io/">Package Control</a>.</p>
+<h4 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>在线练习</h4>
+<p>[<a href="http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010re">http://codepen.io/gaearon/pen/ZpvBNJ?editors=0010re</a>]，无需安装任何开发环境。</p>
+<h2 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>拓展</h2>
+<p>如果你使用npm run build来编译得到生产环境，此时代码会被编译到build目录下，此时会自动将整个应用打包发布，它会自动使用Webpack控件进行优化与压缩。</p></article></body></html>
